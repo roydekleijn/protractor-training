@@ -1,0 +1,20 @@
+{
+  "name": "new",
+  "version": "1.0.0",
+  "description": "new project",
+  "main": "index.js",
+  "scripts": {
+    "tsc": "tsc",
+    "test": "protractor config.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/jasmine": "^2.6.2",
+    "jasmine-data_driven_tests": "~1.0",
+    "jasmine-spec-reporter": "^4.2.1",
+    "protractor": "^5.2.0",
+    "protractor-jasmine2-screenshot-reporter": "^0.5.0",
+    "typescript": "^2.6.1"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "outDir": "target/specs",
+    "types": ["jasmine", "node"]
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}
