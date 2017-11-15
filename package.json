@@ -10,11 +10,14 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/frisby": "^0.8.1",
     "@types/jasmine": "^2.6.2",
-    "jasmine-data_driven_tests": "~1.0",
     "jasmine-spec-reporter": "^4.2.1",
     "protractor": "^5.2.0",
     "protractor-jasmine2-screenshot-reporter": "^0.5.0",
     "typescript": "^2.6.1"
+  },
+  "devDependencies": {
+    "frisby": "^2.0.8"
   }
 }

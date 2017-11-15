@@ -1,21 +1,20 @@
 import {by, element} from "protractor";
-import {MyAccountPage} from "./MyAccountPage";
 
 export class AuthenticationPage {
 
-    emailField = element(by.css('input#email'));
-    passwordField = element(by.css('input#passwd'));
-    loginButton = element(by.css('button#SubmitLogin'));
+    emailField = element(by.id('email'));
+    passwordField = element(by.id('passwd'));
+    loginButton = element(by.id('SubmitLogin'));
 
-
-    loginWith(email: string, password : string) : MyAccountPage {
+    loginWith(email: string, password: string) {
         this.emailField.sendKeys(email);
         this.passwordField.sendKeys(password);
         this.loginButton.click();
-        return new MyAccountPage;
     }
 
-
+    getWelcomeMessage(): string {
+        return '';
+    }
 
 
 }

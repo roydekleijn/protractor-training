@@ -1,15 +1,17 @@
 import {browser, element, by} from 'protractor';
+import {SelectWrapper} from "./helpers/SelectWrapper";
 
 describe('prestashop login', function () {
 
-    it('should be able to contact', () => {
+    fit('should be able to contact', () => {
         browser.get('http://demo.seleniuminaction.com/index.php?controller=contact');
 
-        element(by.cssContainingText('select#id_contact option', 'Customer service')).click();
+        new SelectWrapper(by.css('select#id_contact')).selectByText('Customer service')
+        // element(by.cssContainingText('select#id_contact option', 'Customer service')).click();
 
         element(by.css('input#email')).sendKeys('email@test.com');
         element(by.css('input#id_order')).sendKeys('order4321');
-        element(by.css('textarea#message')).sendKeys('he product arrived with damages.');
+        element(by.css('textarea#message')).sendKeys('The product arrived with damages.');
         element(by.css('button#submitMessage')).click();
 
         browser.getTitle().then(console.log);

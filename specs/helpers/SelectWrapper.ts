@@ -8,8 +8,7 @@ export class SelectWrapper {
     }
 
     getOptions() {
-        this.select.all(by.tagName('option'));
-        // return this.select.all(by.tagName('option'));
+        return this.select.all(by.tagName('option'));
     }
 
     getSelectedOptions() {

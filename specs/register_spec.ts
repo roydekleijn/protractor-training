@@ -1,5 +1,5 @@
 import {browser, element, by, ExpectedConditions} from 'protractor';
-import {SelectWrapper} from "../helpers/SelectWrapper";
+import {SelectWrapper} from "./helpers/SelectWrapper";
 
 describe('prestashop login', function () {
 
